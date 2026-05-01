@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://your-bucket-name \
+          aws s3 sync . s3://website.techyukt.in \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
